@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Найти работу — вакансии в Кыргызстане | JobKG</title>
+  <meta name="description" content="Каталог вакансий: поиск по должности и компании, фильтры по городу, категории, зарплате, опыту и формату работы.">
+  <meta name="theme-color" content="#2563EB">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JobKG">
+  <meta property="og:title" content="Найти работу — вакансии в Кыргызстане | JobKG">
+  <meta property="og:description" content="Каталог вакансий: поиск по должности и компании, фильтры по городу, категории, зарплате, опыту и формату работы.">
+  <meta property="og:image" content="assets/images/hero-team.jpeg">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/Inter-SemiBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/filters.js"></script>
+  <script defer src="js/jobs.js"></script>
+  <script defer src="js/companies.js"></script>
+  <script defer src="js/content.js"></script>
+  <script defer src="js/employer.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/contact.js"></script>
+</head>
+<body data-page="jobs" data-nav="jobs" data-title="meta.jobs.title" data-desc="meta.jobs.desc">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Перейти к содержимому</a>
+  <div id="site-header"></div>
+  <main id="main" tabindex="-1">
+    <noscript><div class="container section"><p>Для работы сайта включите JavaScript. / Сайттын иштеши үчүн JavaScript'ти иштетиңиз.</p></div></noscript>
+    <div class="page-head">
+      <div class="container">
+        <ol class="breadcrumbs"><li><a href="index.html" data-i18n="nav.home">Главная</a></li><li aria-current="page" data-i18n="nav.jobs">Найти работу</li></ol>
+        <h1 data-i18n="jobs.title">Найти работу</h1>
+        <p data-i18n="jobs.lead">Ищите по должности, компании или ключевому слову и уточняйте результат фильтрами.</p>
+      </div>
+    </div>
+    <div class="container catalog">
+      <aside class="card filters" id="filters-panel" aria-labelledby="filters-title">
+        <form id="filters-form" novalidate>
+          <div class="filters__head">
+            <h2 id="filters-title" data-i18n="jobs.filters">Фильтры</h2>
+            <button type="button" class="icon-btn filters__close" id="filters-close" aria-label="Закрыть" data-i18n-aria-label="jobs.close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+          </div>
+          <div class="field">
+            <label for="f-q" data-i18n="jobs.q.label">Должность, компания или ключевое слово</label>
+            <input class="input" id="f-q" name="q" type="search" maxlength="100" autocomplete="off" placeholder="Например: дизайнер" data-i18n-placeholder="jobs.q.placeholder">
+          </div>
+          <div class="field"><label for="f-city" data-i18n="jobs.f.city">Город</label><select class="select" id="f-city" name="city"></select></div>
+          <div class="field"><label for="f-cat" data-i18n="jobs.f.category">Категория</label><select class="select" id="f-cat" name="cat"></select></div>
+          <div class="field"><label for="f-emp" data-i18n="jobs.f.employment">Тип занятости</label><select class="select" id="f-emp" name="emp"></select></div>
+          <div class="field"><label for="f-fmt" data-i18n="jobs.f.format">Формат работы</label><select class="select" id="f-fmt" name="fmt"></select></div>
+          <div class="field"><label for="f-exp" data-i18n="jobs.f.experience">Опыт</label><select class="select" id="f-exp" name="exp"></select></div>
+          <div class="field">
+            <label for="f-min" data-i18n="jobs.f.minSalary">Зарплата от, сом</label>
+            <input class="input" id="f-min" name="min" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="9" autocomplete="off" placeholder="30000">
+          </div>
+          <button type="button" class="btn btn-block" id="filters-reset" data-i18n="jobs.reset">Сбросить фильтры</button>
+          <button type="submit" class="btn btn-primary btn-block only-mobile mt-4" data-i18n="jobs.showResults">Показать результаты</button>
+        </form>
+      </aside>
+
+      <section aria-label="Найти работу" data-i18n-aria-label="jobs.title">
+        <div class="results-bar">
+          <p class="results-bar__count" id="results-count" role="status" aria-live="polite"></p>
+          <div class="results-bar__controls">
+            <button type="button" class="btn filters-toggle" id="filters-toggle" aria-controls="filters-panel" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16l-6 8v6l-4-2v-4z"/></svg><span data-i18n="jobs.filters">Фильтры</span></button>
+            <label class="visually-hidden" for="f-sort" data-i18n="jobs.sort.label">Сортировка</label>
+            <select class="select" id="f-sort" name="sort"></select>
+          </div>
+        </div>
+        <div class="active-filters" id="active-filters"></div>
+        <div class="job-list" id="job-list">
+<div class="skeleton" aria-hidden="true"></div>
+<div class="skeleton" aria-hidden="true"></div>
+<div class="skeleton" aria-hidden="true"></div>
+<div class="skeleton" aria-hidden="true"></div>
+        </div>
+      </section>
+    </div>
+    <div class="filters-backdrop" id="filters-backdrop" hidden></div>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>

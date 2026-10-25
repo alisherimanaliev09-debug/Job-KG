@@ -1,0 +1,102 @@
+[
+ {
+  "id": "c1",
+  "demo": true,
+  "name": "Сары-Булак Софт",
+  "industry": "it",
+  "city": "bishkek",
+  "description": "Тестовая IT-компания: разработка веб-сервисов и мобильных приложений для малого бизнеса.",
+  "logoFg": "#1d4ed8",
+  "logoBg": "#dbeafe"
+ },
+ {
+  "id": "c2",
+  "demo": true,
+  "name": "Иссык-Тех Лаб",
+  "industry": "webdev",
+  "city": "karakol",
+  "description": "Тестовая студия веб-разработки, работающая с командами удалённо.",
+  "logoFg": "#0f766e",
+  "logoBg": "#ccfbf1"
+ },
+ {
+  "id": "c3",
+  "demo": true,
+  "name": "Тянь-Шань Медиа",
+  "industry": "marketing",
+  "city": "bishkek",
+  "description": "Тестовое маркетинговое агентство: SMM, контент и performance-реклама.",
+  "logoFg": "#b45309",
+  "logoBg": "#fef3c7"
+ },
+ {
+  "id": "c4",
+  "demo": true,
+  "name": "Чуй Маркет Групп",
+  "industry": "sales",
+  "city": "bishkek",
+  "description": "Тестовая розничная сеть: магазины, интернет-продажи и клиентский сервис.",
+  "logoFg": "#be123c",
+  "logoBg": "#ffe4e6"
+ },
+ {
+  "id": "c5",
+  "demo": true,
+  "name": "Ак-Шоола Дизайн",
+  "industry": "design",
+  "city": "bishkek",
+  "description": "Тестовая дизайн-студия: брендинг, интерфейсы, полиграфия.",
+  "logoFg": "#6d28d9",
+  "logoBg": "#ede9fe"
+ },
+ {
+  "id": "c6",
+  "demo": true,
+  "name": "Тулпар Логистик",
+  "industry": "logistics",
+  "city": "osh",
+  "description": "Тестовая логистическая компания: перевозки и склады на юге страны.",
+  "logoFg": "#15803d",
+  "logoBg": "#dcfce7"
+ },
+ {
+  "id": "c7",
+  "demo": true,
+  "name": "Алай Тревел",
+  "industry": "tourism",
+  "city": "osh",
+  "description": "Тестовая турфирма: экскурсии и размещение для гостей Кыргызстана.",
+  "logoFg": "#c2410c",
+  "logoBg": "#ffedd5"
+ },
+ {
+  "id": "c8",
+  "demo": true,
+  "name": "Нур Билдинг",
+  "industry": "construction",
+  "city": "bishkek",
+  "description": "Тестовая строительная компания: жилые и коммерческие объекты.",
+  "logoFg": "#475569",
+  "logoBg": "#e2e8f0"
+ },
+ {
+  "id": "c9",
+  "demo": true,
+  "name": "Билим Центр",
+  "industry": "education",
+  "city": "jalal-abad",
+  "description": "Тестовый учебный центр: языковые курсы и подготовка к экзаменам.",
+  "logoFg": "#0369a1",
+  "logoBg": "#e0f2fe"
+ },
+ {
+  "id": "c10",
+  "demo": true,
+  "name": "Мурас Бухгалтерия",
+  "industry": "accounting",
+  "city": "tokmok",
+  "description": "Тестовая компания бухгалтерских услуг для малого бизнеса.",
+  "logoFg": "#a21caf",
+  "logoBg": "#fae8ff"
+ }
+]

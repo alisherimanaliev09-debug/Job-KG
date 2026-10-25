@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Компании — работодатели Кыргызстана | JobKG</title>
+  <meta name="description" content="Каталог компаний-работодателей: сфера деятельности, город и количество вакансий (тестовые данные).">
+  <meta name="theme-color" content="#2563EB">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JobKG">
+  <meta property="og:title" content="Компании — работодатели Кыргызстана | JobKG">
+  <meta property="og:description" content="Каталог компаний-работодателей: сфера деятельности, город и количество вакансий (тестовые данные).">
+  <meta property="og:image" content="assets/images/hero-team.jpeg">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/Inter-SemiBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/filters.js"></script>
+  <script defer src="js/jobs.js"></script>
+  <script defer src="js/companies.js"></script>
+  <script defer src="js/content.js"></script>
+  <script defer src="js/employer.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/contact.js"></script>
+</head>
+<body data-page="companies" data-nav="companies" data-title="meta.companies.title" data-desc="meta.companies.desc">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Перейти к содержимому</a>
+  <div id="site-header"></div>
+  <main id="main" tabindex="-1">
+    <noscript><div class="container section"><p>Для работы сайта включите JavaScript. / Сайттын иштеши үчүн JavaScript'ти иштетиңиз.</p></div></noscript>
+    <div class="page-head">
+      <div class="container">
+        <ol class="breadcrumbs"><li><a href="index.html" data-i18n="nav.home">Главная</a></li><li aria-current="page" data-i18n="nav.companies">Компании</li></ol>
+        <h1 data-i18n="companies.title">Компании</h1>
+        <p data-i18n="companies.lead">Каталог работодателей. Все компании в демо-версии вымышлены.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="toolbar" role="search">
+        <div class="field">
+          <label for="c-q" data-i18n="companies.q.label">Поиск по названию или описанию</label>
+          <input class="input" id="c-q" type="search" maxlength="100" autocomplete="off" placeholder="Название компании" data-i18n-placeholder="companies.q.placeholder">
+        </div>
+        <div class="field"><label for="c-city" data-i18n="companies.f.city">Город</label><select class="select" id="c-city"></select></div>
+        <div class="field"><label for="c-ind" data-i18n="companies.f.industry">Сфера деятельности</label><select class="select" id="c-ind"></select></div>
+        <button type="button" class="btn" id="c-reset" data-i18n="jobs.reset">Сбросить фильтры</button>
+      </div>
+      <p class="results-bar__count" id="company-count" role="status" aria-live="polite"></p>
+      <div class="grid grid-3 mb-4" id="company-grid" style="padding-bottom:var(--s-8)"></div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>

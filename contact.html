@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты | JobKG</title>
+  <meta name="description" content="Связаться с командой JobKG. Демонстрационная форма.">
+  <meta name="theme-color" content="#2563EB">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JobKG">
+  <meta property="og:title" content="Контакты | JobKG">
+  <meta property="og:description" content="Связаться с командой JobKG. Демонстрационная форма.">
+  <meta property="og:image" content="assets/images/hero-team.jpeg">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/Inter-SemiBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/filters.js"></script>
+  <script defer src="js/jobs.js"></script>
+  <script defer src="js/companies.js"></script>
+  <script defer src="js/content.js"></script>
+  <script defer src="js/employer.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/contact.js"></script>
+</head>
+<body data-page="contact" data-nav="contact" data-title="meta.contact.title" data-desc="meta.contact.desc">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Перейти к содержимому</a>
+  <div id="site-header"></div>
+  <main id="main" tabindex="-1">
+    <noscript><div class="container section"><p>Для работы сайта включите JavaScript. / Сайттын иштеши үчүн JavaScript'ти иштетиңиз.</p></div></noscript>
+    <div class="page-head">
+      <div class="container">
+        <ol class="breadcrumbs"><li><a href="index.html" data-i18n="nav.home">Главная</a></li><li aria-current="page" data-i18n="foot.contacts">Контакты</li></ol>
+        <h1 data-i18n="contact.title">Контакты</h1>
+        <p data-i18n="contact.lead">Напишите нам. Это демонстрационная форма: сообщение пока никуда не отправляется.</p>
+      </div>
+    </div>
+    <div class="container contact-layout">
+      <form class="form-card" id="contact-form" novalidate>
+        <div class="notice notice-warn mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg><p data-i18n="auth.demoNotice">Демо: аккаунты не создаются, пароли не передаются и не сохраняются. Для настоящей авторизации нужна серверная часть.</p></div>
+        <div class="field">
+            <label for="ct-name"><span data-i18n="contact.name">Имя</span><span class="req" aria-hidden="true">*</span></label>
+            <input class="input" id="ct-name" name="name" type="text" autocomplete="name" maxlength="100" required aria-describedby="ct-name-err">
+            
+            <span class="error" id="ct-name-err" aria-live="polite"></span>
+          </div>
+        <div class="field">
+            <label for="ct-email"><span data-i18n="contact.email">Электронная почта</span><span class="req" aria-hidden="true">*</span></label>
+            <input class="input" id="ct-email" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="ct-email-err">
+            
+            <span class="error" id="ct-email-err" aria-live="polite"></span>
+          </div>
+        <div class="field">
+            <label for="ct-message"><span data-i18n="contact.message">Сообщение</span><span class="req" aria-hidden="true">*</span></label>
+            <textarea class="textarea" id="ct-message" name="message" rows="6" maxlength="2000" required aria-describedby="ct-message-err"></textarea>
+            
+            <span class="error" id="ct-message-err" aria-live="polite"></span>
+          </div>
+        <button class="btn btn-primary btn-lg" type="submit" data-i18n="contact.submit">Отправить (демо)</button>
+        <div id="contact-result" role="status" aria-live="polite"></div>
+      </form>
+      <aside class="card promo">
+        <h2 class="h3" data-i18n="contact.info.title">Контактные данные</h2>
+        <p data-i18n="contact.info.text">Адрес, телефон и почта проекта будут опубликованы после запуска. Сейчас реальных контактов на сайте нет.</p>
+      </aside>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>

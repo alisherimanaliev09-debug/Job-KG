@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Избранные вакансии | JobKG</title>
+  <meta name="description" content="Вакансии, сохранённые в избранное на этом устройстве.">
+  <meta name="theme-color" content="#2563EB">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JobKG">
+  <meta property="og:title" content="Избранные вакансии | JobKG">
+  <meta property="og:description" content="Вакансии, сохранённые в избранное на этом устройстве.">
+  <meta property="og:image" content="assets/images/hero-team.jpeg">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/Inter-SemiBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/filters.js"></script>
+  <script defer src="js/jobs.js"></script>
+  <script defer src="js/companies.js"></script>
+  <script defer src="js/content.js"></script>
+  <script defer src="js/employer.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/contact.js"></script>
+</head>
+<body data-page="favorites" data-nav="favorites" data-title="meta.favorites.title" data-desc="meta.favorites.desc">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Перейти к содержимому</a>
+  <div id="site-header"></div>
+  <main id="main" tabindex="-1">
+    <noscript><div class="container section"><p>Для работы сайта включите JavaScript. / Сайттын иштеши үчүн JavaScript'ти иштетиңиз.</p></div></noscript>
+    <div class="page-head">
+      <div class="container">
+        <ol class="breadcrumbs"><li><a href="index.html" data-i18n="nav.home">Главная</a></li><li aria-current="page" data-i18n="nav.favorites">Избранное</li></ol>
+        <h1 data-i18n="fav.title">Избранное</h1>
+        <p data-i18n="fav.lead">Сохранённые вакансии хранятся только в этом браузере.</p>
+      </div>
+    </div>
+    <div class="container section">
+      <p class="results-bar__count" id="fav-total" role="status" aria-live="polite"></p>
+      <div class="job-list" id="fav-list"></div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>

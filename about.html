@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О проекте JobKG</title>
+  <meta name="description" content="О платформе JobKG: для кого она создана, что уже работает, что демонстрационное и что требует серверной части.">
+  <meta name="theme-color" content="#2563EB">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JobKG">
+  <meta property="og:title" content="О проекте JobKG">
+  <meta property="og:description" content="О платформе JobKG: для кого она создана, что уже работает, что демонстрационное и что требует серверной части.">
+  <meta property="og:image" content="assets/images/hero-team.jpeg">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/Inter-SemiBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/filters.js"></script>
+  <script defer src="js/jobs.js"></script>
+  <script defer src="js/companies.js"></script>
+  <script defer src="js/content.js"></script>
+  <script defer src="js/employer.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/contact.js"></script>
+</head>
+<body data-page="about" data-nav="about" data-title="meta.about.title" data-desc="meta.about.desc">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Перейти к содержимому</a>
+  <div id="site-header"></div>
+  <main id="main" tabindex="-1">
+    <noscript><div class="container section"><p>Для работы сайта включите JavaScript. / Сайттын иштеши үчүн JavaScript'ти иштетиңиз.</p></div></noscript>
+    <div class="page-head">
+      <div class="container">
+        <ol class="breadcrumbs"><li><a href="index.html" data-i18n="nav.home">Главная</a></li><li aria-current="page" data-i18n="nav.about">О проекте</li></ol>
+        <h1 data-i18n="about.title">О проекте JobKG</h1>
+        <p data-i18n="about.lead">JobKG — платформа для поиска вакансий, стажировок, первой работы, подработки и удалённой работы в Кыргызстане. Проект находится в разработке.</p>
+      </div>
+    </div>
+    <section class="section" aria-labelledby="mission-title">
+      <div class="container split">
+        <article class="card promo">
+          <h2 id="mission-title" class="h3" data-i18n="about.mission.title">Наша цель</h2>
+          <p data-i18n="about.mission.text">Помочь людям быстро находить работу, а работодателям — сотрудников. Особое внимание — студентам и выпускникам, которым нужна первая работа или стажировка.</p>
+        </article>
+        <article class="card promo">
+          <h2 class="h3" data-i18n="about.audience.title">Для кого JobKG</h2>
+          <ul>
+            <li data-i18n="about.a1">Студенты колледжей и университетов, выпускники без опыта</li>
+            <li data-i18n="about.a2">Начинающие и опытные специалисты</li>
+            <li data-i18n="about.a3">Работодатели, предприниматели и компании</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="section section-alt" aria-labelledby="status-title">
+      <div class="container">
+        <div class="section-head"><div><h2 id="status-title" data-i18n="about.status.title">Что уже работает, а что нет</h2><p data-i18n="about.status.lead">Мы честно показываем состояние проекта, чтобы вы понимали, чего ожидать от демо-версии.</p></div></div>
+        <div class="compare">
+          <article class="card card--ok">
+            <h3><svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span data-i18n="about.col.working">Работает сейчас</span></h3>
+            <ul>
+<li data-i18n="about.w1">Поиск и фильтры: город, категория, зарплата, тип занятости, опыт, формат</li>
+<li data-i18n="about.w2">Сортировка по дате публикации и зарплате</li>
+<li data-i18n="about.w3">Избранное на вашем устройстве</li>
+<li data-i18n="about.w4">Страницы вакансий, компаний и статей</li>
+<li data-i18n="about.w5">Переключение RU/KG с запоминанием выбора</li>
+<li data-i18n="about.w6">Адаптивная вёрстка и доступность</li>
+            </ul>
+          </article>
+          <article class="card card--demo">
+            <h3><svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg><span data-i18n="about.col.demo">Демонстрация</span></h3>
+            <ul>
+<li data-i18n="about.d1">Тестовые вакансии и вымышленные компании</li>
+<li data-i18n="about.d2">Форма отклика: проверка полей без отправки</li>
+<li data-i18n="about.d3">Форма вакансии: локальный черновик</li>
+<li data-i18n="about.d4">Кабинеты соискателя и работодателя: данные только в браузере</li>
+            </ul>
+          </article>
+          <article class="card card--api">
+            <h3><svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><span data-i18n="about.col.backend">Нужна серверная часть</span></h3>
+            <ul>
+<li data-i18n="about.b1">Регистрация, вход, роли и безопасное хранение паролей</li>
+<li data-i18n="about.b2">Публикация вакансий и модерация</li>
+<li data-i18n="about.b3">Реальная отправка откликов работодателям</li>
+<li data-i18n="about.b4">Хранение резюме и персональных данных</li>
+<li data-i18n="about.b5">Оплата и тарифы продвижения</li>
+<li data-i18n="about.b6">Уведомления по электронной почте</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
